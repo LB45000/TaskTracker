@@ -5,14 +5,14 @@ import Footer from './Footer';
 
 function App() {
   const [tasks, setTasks] = useState([
-    // Demo data
+    // sample data
     { id: 1, text: 'Task 1', completed: false },
     { id: 2, text: 'Task 2', completed: true },
   ]);
 
   const addTask = (text) => {
     const newTask = {
-      id: Math.random(), // Not ideal for real apps, but okay for this demo
+      id: Math.random(), 
       text,
       completed: false,
     };
